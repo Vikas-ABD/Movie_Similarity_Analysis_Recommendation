@@ -2,15 +2,15 @@
 
 ## Assignment Overview
 
-In this assignment, we performed a comprehensive movie similarity analysis using the Movie Plot Synopses dataset available on Kaggle. The dataset can be accessed [here](https://www.kaggle.com/cryptexcode/mpst-movie-plot-synopses-with-tags).
+In this assignment, we conducted an in-depth movie similarity analysis using the Movie Plot Synopses dataset available on Kaggle. You can access the dataset [here](https://www.kaggle.com/cryptexcode/mpst-movie-plot-synopses-with-tags).
 
 ## Data Collection
 
-1. **Visit Kaggle Dataset Page:**
+1. **Kaggle Dataset Page:**
    Access the Movie Plot Synopses dataset on Kaggle through the provided [link](https://www.kaggle.com/cryptexcode/mpst-movie-plot-synopses-with-tags).
 
 2. **Download the Dataset:**
-   Utilize the download option on Kaggle to obtain the dataset in CSV format.
+   Download the dataset in CSV format using the available option on Kaggle.
 
 ## Dataset Contents
 
@@ -40,12 +40,15 @@ In this assignment, we performed a comprehensive movie similarity analysis using
 
 1. **Bag of Words (BoW):**
    - Represents each document as an unordered set of words, disregarding grammar and word order.
-   
+   ![BoW Image](bow.png)
+
 2. **Term Frequency-Inverse Document Frequency (TF-IDF):**
    - Weighs words based on their frequency in the current document against their frequency in the entire dataset.
+   ![TF-IDF Image](TF-IDF.png)
 
 3. **Continuous Bag of Words (CBOW):**
    - Neural network-based word embedding model that captures word semantics.
+   ![CBOW Image](cbow.png)
 
 ## Similarity Analysis Using Cosine Similarity
 
@@ -53,38 +56,39 @@ Cosine similarity metric is employed to quantify the degree of similarity betwee
 
 ...    |       ...       |      ...
 
-
 Among the trio, the CBOW model emerged as the frontrunner, showcasing superior performance in capturing subtle nuances and contextual intricacies within the movie synopses.
 
 Noteworthy examples include "Iron Man" and its sequels, where CBOW achieved impressive similarity scores, such as 93.01% for "Iron Man" and 87.84% for "Iron Man 3."
 
 ## GitHub Repository
 
-[GitHub Link](https://github.com/Vikas-ABD/movie_similarity_Analysis_Recommendations.git)
+[GitHub Link](https://github.com/Vikas-ABD/Movie_Similarity_Analysis_Recommendation
+.git)
 
 ## Instructions
 
 1. **Clone the Repository:**
-''''
-git clone https://github.com/Vikas-ABD/movie_similarity_Analysis_Recommendations.git
-''''
+    ```sh
+    git clone https://github.com/Vikas-ABD/Movie_Similarity_Analysis_Recommendation
+.git
+    ```
 
 3. **Install Requirements:**
-''''
-pip install -r requirements.txt
-''''
+    ```sh
+    pip install -r requirements.txt
+    ```
 
 4. **Run the Notebook in Google Colab:**
-Execute the notebook to generate `similarity.pkl` and `data_frame.pkl` files.
+    Execute the notebook to generate `similarity.pkl` and `data_frame.pkl` files.
 
 5. **Create Streamlit Web Application:**
-- Utilize the generated files for creating a user-friendly Streamlit web application.
-- Extract movie images from IMDb site through API.
+    - Utilize the generated files for creating a user-friendly Streamlit web application.
+    - Extract movie images from the IMDb site through API.
 
-5. **Run the Web Application:**
-''''
-python app.py
-''''
-Access the web application locally for exploring movie recommendations.
+6. **Run the Web Application:**
+    ```sh
+    streamlit run app.py
+    ```
+    Access the web application locally for exploring movie recommendations.
 
-Feel free to explore, modify, and enhance the analysis and recommendation system as needed. Happy coding!
+## Download required file from the file download_required_files.txt
