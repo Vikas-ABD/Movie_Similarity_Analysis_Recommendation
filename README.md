@@ -92,3 +92,8 @@ Noteworthy examples include "Iron Man" and its sequels, where CBOW achieved impr
     Access the web application locally for exploring movie recommendations.
 
 ## Download required file from the file download_required_files.txt
+
+
+**web app working demo:**
+   - web app created using streamlit and we can deploy that in the cloud also .
+   ![demo Image](demo_streamlit_app.png)
